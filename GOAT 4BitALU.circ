@@ -630,6 +630,79 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
+  <circuit name="4-Bit NOT">
+    <a name="circuit" val="4-Bit NOT"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="75" stroke="#000000" stroke-width="2" width="40" x="50" y="55"/>
+      <text font-family="SansSerif" font-size="18" text-anchor="middle" x="69" y="79">N</text>
+      <text font-family="SansSerif" font-size="18" text-anchor="middle" x="70" y="100">O</text>
+      <text font-family="SansSerif" font-size="18" text-anchor="middle" x="70" y="121">T</text>
+      <circ-port height="8" pin="80,80" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="80,120" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="80,160" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="80,200" width="8" x="46" y="116"/>
+      <circ-port height="10" pin="140,80" width="10" x="85" y="55"/>
+      <circ-port height="10" pin="140,120" width="10" x="85" y="75"/>
+      <circ-port height="10" pin="140,160" width="10" x="85" y="95"/>
+      <circ-port height="10" pin="140,200" width="10" x="85" y="115"/>
+      <circ-anchor facing="east" height="6" width="6" x="87" y="57"/>
+    </appear>
+    <wire from="(80,160)" to="(110,160)"/>
+    <wire from="(80,80)" to="(110,80)"/>
+    <wire from="(80,120)" to="(110,120)"/>
+    <wire from="(80,200)" to="(110,200)"/>
+    <comp lib="0" loc="(140,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="R0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(140,200)" name="NOT Gate"/>
+    <comp lib="0" loc="(80,80)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X0"/>
+    </comp>
+    <comp lib="0" loc="(80,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X2"/>
+    </comp>
+    <comp lib="0" loc="(80,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X3"/>
+    </comp>
+    <comp lib="0" loc="(140,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="R1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(115,40)" name="Text">
+      <a name="text" val="4-Bit NOT"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(140,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="R3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(140,120)" name="NOT Gate"/>
+    <comp lib="1" loc="(140,160)" name="NOT Gate"/>
+    <comp lib="1" loc="(140,80)" name="NOT Gate"/>
+    <comp lib="0" loc="(80,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X1"/>
+    </comp>
+    <comp lib="0" loc="(140,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="R2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
   <circuit name="VA">
     <a name="circuit" val="VA"/>
     <a name="clabel" val=""/>
